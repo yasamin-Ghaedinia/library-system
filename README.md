@@ -2,9 +2,9 @@
 
 A lightweight library management system built with **Flask**, featuring a REST API backend and a vanilla JavaScript frontend. It allows you to manage books and members, track borrowing/returning of books, and view real-time library statistics.
 
-> ⚠️ **Note:** This project is not currently deployed to a live server. It was previously hosted but is no longer online. All the source code is complete and fully functional — you can run it locally by following the instructions below.
+>  **Note:** This project is not currently deployed to a live server. It was previously hosted but is no longer online. All the source code is complete and fully functional — you can run it locally by following the instructions below.
 
-## ✨ Features
+##  Features
 
 - Add, search, and remove books
 - Add and manage library members
@@ -13,7 +13,7 @@ A lightweight library management system built with **Flask**, featuring a REST A
 - Live library statistics (total books, available/borrowed counts, member count)
 - Simple REST API that separates backend logic from the frontend
 
-## 🛠️ Tech Stack
+##  Tech Stack
 
 - **Backend:** Python, Flask
 - **Server:** Gunicorn (for production use)
@@ -21,7 +21,7 @@ A lightweight library management system built with **Flask**, featuring a REST A
 - **Frontend:** HTML, CSS, JavaScript (vanilla — no framework)
 - **Data storage:** In-memory (data resets when the server restarts; no database is used)
 
-## 📁 Project Structure
+##  Project Structure
 
 ```
 library/
@@ -41,7 +41,7 @@ library/
     └── js/
 ```
 
-## 🚀 Getting Started
+##  Getting Started
 
 ### Prerequisites
 
@@ -87,7 +87,7 @@ library/
    http://localhost:8000
    ```
 
-## 🔌 API Endpoints
+##  API Endpoints
 
 | Method | Endpoint | Description |
 |--------|----------|-------------|
@@ -100,11 +100,11 @@ library/
 | POST   | `/api/books/<book_id>/borrow` | Borrow a book |
 | POST   | `/api/books/<book_id>/return` | Return a book |
 
-## 📌 Notes
+##  Notes
 
 - The app comes pre-seeded with a few sample books and members on startup, so it's ready to explore right away.
 - Since data is stored in memory, all changes are lost when the server restarts. Adding a database (e.g., SQLite) would be a natural next step.
 
-## 📄 License
+##  License
 
 This project currently has no license specified. Feel free to use it for learning purposes.
