@@ -1,0 +1,151 @@
+@media (max-width: 1000px) {
+
+    .sidebar {
+        width: 210px;
+    }
+
+    .main-content {
+        margin-left: 210px;
+
+        padding: 30px;
+    }
+
+    .stats-grid {
+        grid-template-columns:
+            repeat(2, 1fr);
+    }
+
+}
+
+
+@media (max-width: 760px) {
+
+    .sidebar {
+        display: none;
+    }
+
+    .main-content {
+        margin-left: 0;
+
+        padding:
+            22px 18px 100px;
+    }
+
+    .topbar {
+        margin-bottom: 24px;
+    }
+
+    .hero {
+        padding: 28px;
+
+        min-height: 300px;
+    }
+
+    .hero-decoration {
+        display: none;
+    }
+
+    .stats-grid {
+        grid-template-columns:
+            repeat(2, 1fr);
+
+        gap: 12px;
+    }
+
+    .stat-card {
+        padding: 16px;
+
+        flex-direction: column;
+
+        align-items: flex-start;
+    }
+
+    .books-toolbar,
+    .members-header {
+        flex-direction: column;
+
+        align-items: stretch;
+    }
+
+    .filters {
+        overflow-x: auto;
+    }
+
+    .mobile-navigation {
+        position: fixed;
+
+        display: flex;
+
+        justify-content: space-around;
+
+        align-items: center;
+
+        bottom: 15px;
+        left: 15px;
+        right: 15px;
+
+        height: 65px;
+
+        background:
+            var(--sage-dark);
+
+        border-radius: 22px;
+
+        z-index: 20;
+
+        box-shadow:
+            0 15px 40px
+            rgba(0, 0, 0, 0.2);
+    }
+
+    .mobile-nav {
+        width: 45px;
+        height: 45px;
+
+        border-radius: 15px;
+
+        background: transparent;
+
+        color:
+            var(--cream);
+
+        transition:
+            var(--transition);
+    }
+
+    .mobile-nav.active {
+        background:
+            rgba(255, 255, 255, 0.15);
+
+        transform:
+            translateY(-3px);
+    }
+
+}
+
+
+@media (max-width: 450px) {
+
+    .topbar h2 {
+        font-size: 25px;
+    }
+
+    .topbar .add-button {
+        padding: 11px 13px;
+
+        font-size: 0;
+    }
+
+    .topbar .add-button span {
+        font-size: 22px;
+    }
+
+    .stats-grid {
+        grid-template-columns: 1fr 1fr;
+    }
+
+    .hero-content h1 {
+        font-size: 34px;
+    }
+
+}
